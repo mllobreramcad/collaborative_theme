@@ -93,17 +93,128 @@ a img {
 
 /* =Global
 ----------------------------------------------- */
+html	{
+	background-color: #404040;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body	{
+	background: url('images/tattoo-man-960x678px.jpg') no-repeat;
+	z-index: -1;
+	width: 960px;
+	height: 678px;
+	margin: auto;
+	background-color:rgb(197,164,133, 0.6);
+}
+
+h1	{
+	font-family: 'biondiregular';
+	font-size: 14px;
+	color: #A3311F;
+	font-variant:small-caps;
+	font-weight: bold;
+}
+
+#hero	{
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 200px;
+}
+
+#main_content	{
+	width: 350px;
+	height: 277px;
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 358px;
+	padding: 10px;
+	font-family: Lucida Sans;
+	font-size: 12px;
+	line-height: 1.3em;
+	color: #444;
+}
+
+#main_content h1	{
+	font-size: 18px;
+}
+
+.left	{
+	float: left;
+	width: 165px;
+	padding-top: 10px;
+	
+	
+}
+
+.right	{
+	float: right;
+	width: 165px;
+	padding-top: 10px;
+}
+
+#visit	{
+	width: 121px;
+	height: 114px;
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 394px;
+}
+
+#hours	{
+	width: 121px;
+	height: 80px;
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 508px;
+}
+
+#social	{
+	position: absolute;
+	width: 84px;
+	height: 21px;
+	margin-left: 145px;
+	margin-top: 600px;
+}
+
+#social ul {
+	list-style: none;
+	margin: 0;
+}
+
+#social li {
+	float: left;
+	padding-left: 5px;
+}
+
+#social ul li	{
+	margin: 0;
+	display: inline;
+	padding-left: 5px;
+}
+
+footer	{
+	clear: both;
+	position: absolute;
+	width: 324px;
+	height: 23px;
+	margin-left: 297px;
+	margin-top: 600px;
+}
 
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+	color: #444;
+	font-family: Lucinda Sans;
+	font-size: 8px;
+	font-size: 1.2em;
+	line-height: 1.2;
 }
 
 /* Headings */
@@ -119,7 +230,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 0;
 }
 ul, ol {
 	margin: 0 0 1.5em 3em;
@@ -307,15 +418,12 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
 }
 a:visited {
-	color: purple;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
 }
 
 /* Alignment */
@@ -342,6 +450,24 @@ a:active {
 	position: absolute !important;
 }
 
+/* =Masthead
+----------------------------------------------- */
+
+#mmt_logo	{
+	width: 300px;
+	height: 74px;
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 20px;
+}
+
+.site-title	{
+	display: none;
+}
+
+.site-description	{
+	display: none;
+}
 
 /* =Menu
 ----------------------------------------------- */
@@ -349,22 +475,42 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	width: 597px;
+	height: 15px;
+	font-family: 'biondiregular';
+	font-size: 14px;
+	color: #fff;
+	font-variant:small-caps;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 242px;
+	margin-top: 120px;
 }
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
 }
 .main-navigation li {
+	color: #fff;
 	float: left;
+	width: 113px;
+	padding-right: 5px;
 	position: relative;
 }
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #fff;
 }
+
+.main-navigation a:hover	{
+	color: #777;
+}
+
+.main-navigation a:active	{
+	color: #777;
+}
+	
 .main-navigation ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -390,6 +536,7 @@ a:active {
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
+	color: #fff;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
@@ -405,7 +552,6 @@ a:active {
 .main-small-navigation .menu {
 	display: none;
 }
-
 
 /* =Content
 ----------------------------------------------- */
@@ -558,6 +704,37 @@ object {
 	display: none;
 }
 
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+	*zoom: 1;
+}
+
 /* =Infinite Scroll
 ----------------------------------------------- */
 
@@ -571,4 +748,16 @@ object {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending #colophon {
 	display: block;
+}
+
+@font-face {
+    font-family: 'biondiregular';
+    src: url('biondi-webfont.eot');
+    src: url('biondi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('biondi-webfont.woff') format('woff'),
+         url('biondi-webfont.ttf') format('truetype'),
+         url('biondi-webfont.svg#biondiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

@@ -138,6 +138,15 @@ function collaborative_theme_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	wp_register_style( 'biondiregular', 
+	get_template_directory_uri() . '/fonts/biondiregular-fontfacekit/stylesheet.css', 
+		false, 
+		'1', 
+		'all' );
+
+	// enqueing:
+	wp_enqueue_style( 'biondiregular' );
 
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );

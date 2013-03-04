@@ -11,12 +11,10 @@
 
 	</div><!-- #main .site-main -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'collaborative_theme_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'collaborative_theme' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'collaborative_theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'collaborative_theme' ), 'collaborative_theme', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<footer id="site-footer" role="contentinfo">
+			<p>Copyright &copy; 2013 Elise Murphy, MCAD Student</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
