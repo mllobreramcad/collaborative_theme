@@ -19,9 +19,9 @@ Template Name: Homepage
 */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area homepage">
 		<div id="content" class="site-content" role="main">
+<?php while ( have_posts() ) : the_post(); ?>
 			
 			<div id="hero">
 			<img src="<?php the_field('hero_image'); ?>" alt="MMT Building" />
@@ -50,13 +50,13 @@ get_header(); ?>
 		</div>
 
 	<div id="homepage-text">
-		<?php while ( have_posts() ) : the_post(); ?>
+		
 
-		<?php get_template_part( 'content', 'page' ); ?>
+		<?php the_content(); ?>
 
-		<?php endwhile; // end of the loop. ?>
 	</div>
 
+<?php endwhile; // end of the loop. ?>
 	</div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
 
