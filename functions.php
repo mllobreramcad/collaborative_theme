@@ -154,6 +154,40 @@ function collaborative_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'collaborative_theme_scripts' );
 
+    add_action( 'init', 'create_my_post_types' );
+
+    function create_my_post_types() {
+		register_post_type( 'artist_page',
+			array(
+				'labels' => array(
+				'name' => __( 'Artist Pages' ),
+				'singular_name' => __( 'Artist Page' ),
+				'add_new' => __( 'Add New' ),
+				'add_new_item' => __( 'Add New Artist Page' ),
+				'edit' => __( 'Edit' ),
+				'edit_item' => __( 'Edit Artist Page' ),
+				'new_item' => __( 'New Artist Page' ),
+				'view' => __( 'View Artist Page' ),
+				'view_item' => __( 'View Artist Page' ),
+				'search_items' => __( 'Search Artist Pages' ),
+				'not_found' => __( 'No Artist Pages found' ),
+				'not_found_in_trash' => __( 'No Artist Pages found in Trash' ),
+				'parent' => __( 'Parent Artist Page' ),
+			),
+			'public' => true,
+				'menu_position' => 4,
+				'rewrite' => array('slug' => 'artist_pages'),
+				'supports' => array( 'title', 'editor', 'thumbnail' ),
+				'taxonomies' => array('category', 'post_tag'),
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'query_var' => true,
+				'capability_type' => 'post',
+				'hierarchical' => true,
+				)
+			);
+		}
+
 /**
  * Implement the Custom Header feature
  */

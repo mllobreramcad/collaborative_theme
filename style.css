@@ -96,19 +96,16 @@ a img {
 html	{
 	background-color: #404040;
 	width: 90%;
+	height: 687px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 body	{
-	background: url('images/tattoo-man-960x678px.jpg') no-repeat;
-	z-index: -1;
 	width: 960px;
-	height: 678px;
 	margin: auto;
-	background-color:rgb(197,164,133, 0.6);
 }
-
+	
 h1	{
 	font-family: 'biondiregular';
 	font-size: 14px;
@@ -117,43 +114,9 @@ h1	{
 	font-weight: bold;
 }
 
-#hero	{
-	width: 350px;
-	height: 150px;
-	position: absolute;
-	margin-left: 297px;
-	margin-top: 200px;
-}
-
-#main_content	{
-	width: 350px;
-	height: 277px;
-	position: absolute;
-	margin-left: 297px;
-	margin-top: 358px;
-	padding: 10px;
-	font-family: Lucida Sans;
-	font-size: 12px;
-	line-height: 1.3em;
-	color: #444;
-}
-
-#main_content h1	{
-	font-size: 18px;
-}
-
-.left	{
-	float: left;
-	width: 165px;
-	padding-top: 10px;
-	
-	
-}
-
-.right	{
-	float: right;
-	width: 165px;
-	padding-top: 10px;
+p	{
+	font-family: 'Lucida Grande';
+	font-size: 10px;
 }
 
 #visit	{
@@ -181,6 +144,7 @@ h1	{
 }
 
 #social ul {
+	display: block;
 	list-style: none;
 	margin: 0;
 }
@@ -216,6 +180,8 @@ textarea {
 	font-size: 1.2em;
 	line-height: 1.2;
 }
+
+
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
@@ -579,6 +545,273 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+/* =Homepage Content
+----------------------------------------------- */
+
+#homepage-text .entry-header {
+	visibility: hidden;
+	position: absolute;
+}
+
+.content-area-homepage	{
+	background: url('images/tattoo-man-960x678px.jpg') no-repeat;
+	background-color:rgb(197,164,133, 0.6);
+	width: 960px;
+	height: 687px;
+	margin: auto;
+}
+
+#hero	{
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 200px;
+}
+
+#main_content	{
+	width: 350px;
+	height: 277px;
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 358px;
+	padding: 10px;
+	font-family: Lucida Sans;
+	font-size: 12px;
+	line-height: 1.3em;
+	color: #444;
+}
+
+#main_content h1	{
+	font-size: 18px;
+}
+
+.left	{
+	float: left;
+	width: 165px;
+	padding-top: 10px;
+}
+
+.right	{
+	float: right;
+	width: 165px;
+	padding-top: 10px;
+}
+
+/* =Artist Page Content
+----------------------------------------------- */
+
+#artist-page-text .entry-header {
+	visibility: hidden;
+	position: absolute;
+}
+
+.content-area	{
+	background-color: #fff;
+	width: 960px;
+	height: 687px;
+	margin: auto;
+}
+
+#artist-page-masthead	{
+	background: url('images/tattoo-woman-960x180px.jpg') no-repeat;
+	width: 960px;
+	height: 180px;
+	margin: auto;
+}
+
+#artist-bio	{
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 15px;
+	width: 405px;
+	height: 276px;
+}
+
+#artist-bio	h1{
+	font-family: 'biondiregular';
+	font-size: 18px;
+	color: #A3311F;
+	font-variant:small-caps;
+	font-weight: bold;
+	line-height: 1.28em;
+}
+
+#artist-bio	h2{
+	font-family: 'biondiregular';
+	font-size: 18px;
+	color: #444;
+	font-variant:small-caps;
+	font-weight: bold;
+	line-height: 1.28em;
+}
+
+#artist-bio	p{
+	font-family: 'Lucida Grande';
+	font-size: 10px;
+	color: #444;
+	line-height: 1.38em;
+	padding-bottom: 8px;
+}
+
+#portfolio-header	{
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 253px;
+	width: 113px;
+	height: 15px;
+}
+
+#portfolio-header h2	{
+	font-family: 'biondiregular';
+	font-size: 16px;
+	color: #444;
+	font-variant:small-caps;
+	font-weight: bold;
+}
+
+#image1	{
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 273px;
+	width: 113px;
+	height: 100px;
+}
+
+#image2	{
+	position: absolute;
+	margin-left: 418px;
+	margin-top: 273px;
+	width: 113px;
+	height: 100px;
+}
+
+#image3	{
+	position: absolute;
+	margin-left: 539px;
+	margin-top: 273px;
+	width: 113px;
+	height: 100px;
+}
+
+#image4	{
+	position: absolute;
+	margin-left: 660px;
+	margin-top: 273px;
+	width: 113px;
+	height: 100px;
+}
+
+#content1	{
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 378px;
+	width: 113px;
+	height: 100px;
+}
+
+#content2	{
+	position: absolute;
+	margin-left: 418px;
+	margin-top: 378px;
+	width: 113px;
+	height: 100px;
+}
+
+#content3	{
+	position: absolute;
+	margin-left: 539px;
+	margin-top: 378px;
+	width: 113px;
+	height: 100px;
+}
+
+#content4	{
+	position: absolute;
+	margin-left: 660px;
+	margin-top: 378px;
+	width: 113px;
+	height: 100px;
+}
+
+#artist-photo	{
+	position: absolute;
+	margin-left: 727px;
+	margin-top: 15px;
+	width: 113px;
+	height: 111px;
+}
+
+#artist-statement	{
+	position: absolute;
+	margin-left: 727px;
+	margin-top: 130px;
+	width: 113px;
+	height: 167px;
+}
+
+#artist-statement h2	{
+	font-family: 'biondiregular';
+	font-size: 16px;
+	color: #444;
+	font-variant:small-caps;
+	font-weight: bold;
+}
+
+#artist-statement h3	{
+	padding-top: 8px;
+}
+
+#artist-visit	{
+	width: 121px;
+	height: 114px;
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 194px;
+}
+
+#artist-hours	{
+	width: 121px;
+	height: 80px;
+	position: absolute;
+	margin-left: 145px;
+	margin-top: 308px;
+}
+
+#artist-social	{
+	position: absolute;
+	width: 84px;
+	height: 21px;
+	margin-left: 145px;
+	margin-top: 400px;
+}
+
+#social ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+}
+
+#social li {
+	float: left;
+	padding-left: 5px;
+}
+
+#social ul li	{
+	margin: 0;
+	display: inline;
+	padding-left: 5px;
+}
+
+#content-footer	{
+	position: absolute;
+	margin-left: 297px;
+	margin-top: 425px;
+	width: 324px;
+	height: 23px;
+}
+
 
 
 /* =Asides
