@@ -19,10 +19,11 @@ Template Name: Artist Page
  */
 
 get_header(); ?>
-
+		
+	<body id="artists">
 		<div id="primary" class="content-area">
-			<div id="content" class="site-content artist-page" role="main">
-
+		<div id="content" class="site-content artist-page" role="main">
+			
 				<div id="artist-page-text">
 					<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
@@ -73,5 +74,6 @@ get_header(); ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
+	</body>
 
 <?php get_footer(); ?>

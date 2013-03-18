@@ -509,7 +509,31 @@ a:active {
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
+	color: #777;
+	background-color: rgb(255,255,255);
+	width: 100px;
+	height: 20px;
+	padding-left: 2px;
+	padding-top: 2px;
+	border-color: rgb(136,156,166);
+	border-width: 1px;
+	-moz-border-radius: 1%; /* Firefox vl.O+ */
+	-webkit-border-radius: 0%/4%; /* Safari v3.0+ and by Chrome v0.2+ */
+	border-radius:0%/ 4%; /* Firefox v4.0+, Safari vS.O+, Chrome v4.0+, Opera v10.5+ and by IE v9.0+ */
+	border-style: solid;
+	-moz-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v3.S+ */
+	-webkit-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Safari v3.0+ and by Chrome v0.2 + */
+	box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v4.0+, Safari v5.1+, Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OflX=5,OffY=5,Color=#a5000000,Positive= true)";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5,OffY=5,Color=#a5000000,Positive=true);
 }
+
+.menu-item-9 a	{
+    width: 180px;
+    height: 20px;
+    color: #777
+}
+        
 
 /* Small menu */
 .menu-toggle {

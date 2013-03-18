@@ -20,9 +20,10 @@ Template Name: Homepage
 
 get_header(); ?>
 
+<body id="homepage">
 	<div id="primary" class="content-area-homepage">
 		<div id="content" class="site-content" role="main">
-	
+		
 			<div id="hero">
 			<img src="<?php the_field('hero_image'); ?>" alt="MMT Building" />
 			</div>
@@ -48,7 +49,6 @@ get_header(); ?>
 			<li><a href="http://www.twitter.com"><img id="twitter" src="<?php bloginfo( 'stylesheet_directory' );?>/images/twitter-26x21px.png" alt="Twitter" /></a></li>
 			</ul>
 		</div>
-		</body>
 
 	<div id="homepage-text">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -60,4 +60,5 @@ get_header(); ?>
 
 	</div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
+</body>
 <?php get_footer(); ?>
