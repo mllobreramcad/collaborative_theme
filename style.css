@@ -99,6 +99,7 @@ html	{
 	height: 687px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -22px;
 }
 
 body	{
@@ -158,15 +159,6 @@ p	{
 	margin: 0;
 	display: inline;
 	padding-left: 5px;
-}
-
-footer	{
-	clear: both;
-	position: absolute;
-	width: 324px;
-	height: 23px;
-	margin-left: 297px;
-	margin-top: 600px;
 }
 
 body,
@@ -459,9 +451,7 @@ a:active {
 .main-navigation li {
 	color: #fff;
 	float: left;
-	width: 113px;
-	padding-right: 5px;
-	position: relative;
+	width: 115px;
 }
 .main-navigation a {
 	display: block;
@@ -471,47 +461,8 @@ a:active {
 
 .main-navigation a:hover	{
 	color: #777;
-}
-
-.main-navigation a:active	{
-	color: #777;
-}
-	
-.main-navigation ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	position: absolute;
-		top: 1.5em;
-		left: 0;
-	z-index: 99999;
-}
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-.main-navigation ul ul a {
-	width: 200px;
-}
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-	color: #fff;
-}
-.main-navigation ul li:hover > ul {
-	display: block;
-}
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
-	color: #777;
 	background-color: rgb(255,255,255);
-	width: 100px;
+	width: 110px;
 	height: 20px;
 	padding-left: 2px;
 	padding-top: 2px;
@@ -528,12 +479,66 @@ a:active {
 	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5,OffY=5,Color=#a5000000,Positive=true);
 }
 
-.menu-item-9 a	{
-    width: 180px;
-    height: 20px;
-    color: #777
+.main-navigation a:active	{
+	color: #777;
+	width: 120px;
 }
-        
+	
+.main-navigation ul ul	{
+	display: none;
+}
+
+.sub-menu > li > a {
+	color: #777;
+	font-size: 12px;
+	background-color: rgb(255,255,255);
+	width: 150px;
+	height: 20px;
+	padding-left: 2px;
+	padding-top: 2px;
+	border-color: rgb(136,156,166);
+	border-width: 1px;
+	-moz-border-radius: 1%; /* Firefox vl.O+ */
+	-webkit-border-radius: 0%/4%; /* Safari v3.0+ and by Chrome v0.2+ */
+	border-radius:0%/ 4%; /* Firefox v4.0+, Safari vS.O+, Chrome v4.0+, Opera v10.5+ and by IE v9.0+ */
+	border-style: solid;
+	-moz-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v3.S+ */
+	-webkit-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Safari v3.0+ and by Chrome v0.2 + */
+	box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v4.0+, Safari v5.1+, Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OflX=5,OffY=5,Color=#a5000000,Positive= true)";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5,OffY=5,Color=#a5000000,Positive=true);
+}
+
+.sub-menu > li > a:hover {
+  background-color: rgb(255,200,255);
+  width: 151px;
+}
+
+.main-navigation ul li:hover > ul {
+	display: block;
+	font-size: 12px;
+}
+
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a {
+	color: #777;
+	background-color: rgb(255,255,255);
+	width: 110px;
+	height: 20px;
+	padding-left: 2px;
+	padding-top: 2px;
+	border-color: rgb(136,156,166);
+	border-width: 1px;
+	-moz-border-radius: 1%; /* Firefox vl.O+ */
+	-webkit-border-radius: 0%/4%; /* Safari v3.0+ and by Chrome v0.2+ */
+	border-radius:0%/ 4%; /* Firefox v4.0+, Safari vS.O+, Chrome v4.0+, Opera v10.5+ and by IE v9.0+ */
+	border-style: solid;
+	-moz-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v3.S+ */
+	-webkit-box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Safari v3.0+ and by Chrome v0.2 + */
+	box-shadow: 5px 5px 4px rgba(0,0,0,0.65); /* Firefox v4.0+, Safari v5.1+, Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OflX=5,OffY=5,Color=#a5000000,Positive= true)";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5,OffY=5,Color=#a5000000,Positive=true);
+}
 
 /* Small menu */
 .menu-toggle {
@@ -579,10 +584,10 @@ a:active {
 }
 
 .content-area-homepage	{
-	background: url('images/tattoo-man-960x678px.jpg') no-repeat;
-	background-color:rgb(197,164,133, 0.6);
+	background: url('images/tattoo-man-960x678px.png') no-repeat;
+	background-color: #C5A485;
 	width: 960px;
-	height: 687px;
+	height: 678px;
 	margin: auto;
 }
 
@@ -623,6 +628,14 @@ a:active {
 	padding-top: 10px;
 }
 
+#homepage-footer	{
+	position: absolute;
+	margin-left: 307px;
+	margin-top: 625px;
+	width: 324px;
+	height: 23px;
+}
+
 /* =Artist Page Content
 ----------------------------------------------- */
 
@@ -639,7 +652,7 @@ a:active {
 }
 
 #artist-page-masthead	{
-	background: url('images/tattoo-woman-960x180px.jpg') no-repeat;
+	background: url('images/tattoo-woman-960x180px.png') no-repeat;
 	width: 960px;
 	height: 180px;
 	margin: auto;
@@ -831,7 +844,7 @@ a:active {
 #content-footer	{
 	position: absolute;
 	margin-left: 297px;
-	margin-top: 425px;
+	margin-top: 435px;
 	width: 324px;
 	height: 23px;
 }
@@ -1008,13 +1021,13 @@ object {
 }
 
 @font-face {
-    font-family: 'biondiregular';
-    src: url('biondi-webfont.eot');
-    src: url('biondi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('biondi-webfont.woff') format('woff'),
-         url('biondi-webfont.ttf') format('truetype'),
-         url('biondi-webfont.svg#biondiregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'biondiregular';
+src: url('biondi-webfont.eot');
+src: url('biondi-webfont.eot?#iefix') format('embedded-opentype'),
+url('biondi-webfont.woff') format('woff'),
+url('biondi-webfont.ttf') format('truetype'),
+url('biondi-webfont.svg#biondiregular') format('svg');
+font-weight: normal;
+font-style: normal;
 
 }
